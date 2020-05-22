@@ -1,0 +1,60 @@
+.about * {
+  color: #fff;
+}
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/about-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 70px;
+}
+
+.about .title {
+  color: #f47138;
+}
+
+.about__text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.about__adv-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__adv-block-item {
+  text-align: center;
+  position: relative;
+}
+
+.about__adv-block-item:nth-child(1)::after {
+  position: absolute;
+  content: "Прозрачность и надежность";
+}
+.about__adv-block-item:nth-child(2)::after {
+  content: "Короткие сроки производства";
+}
+.about__adv-block-item:nth-child(3)::after {
+  content: " Высокое качество";
+}
+.about__adv-block-item:nth-child(4)::after {
+  content: " Опытная Команда";
+}
+.about__adv-block-item:nth-child(5)::after {
+  content: "Изготовление по параметрам заказчика";
+}
+
+.about__adv-block-item::after {
+  position: absolute;
+  width: 235px;
+  top: 120px;
+  right: 50%;
+  margin-right: -117.5px;
+}
