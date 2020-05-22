@@ -13,6 +13,7 @@
 
 .about .title {
   color: #f47138;
+  margin-bottom: 70px;
 }
 
 .about__text {
@@ -57,4 +58,27 @@
   top: 120px;
   right: 50%;
   margin-right: -117.5px;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding-bottom: 0px;
+  }
+  .container {
+    padding-bottom: 0;
+  }
+  .about__adv-block {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about__adv-block-item {
+    width: 250px;
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__text {
+    text-align: justify;
+  }
 }
