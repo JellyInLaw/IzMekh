@@ -82,6 +82,7 @@ const modal = document.querySelector(".modal");
 const cross = document.querySelector(".close-modal");
 const submit = document.querySelector(".submit-button");
 const orderButtons = document.querySelectorAll(".button");
+const navOrder = document.querySelector("#navOrder");
 
 let openModal = function () {
   modal.classList.remove("hidden");
@@ -98,6 +99,10 @@ for (let orderButton of orderButtons) {
     openModal();
   };
 }
+
+navOrder.onclick = function () {
+  openModal();
+};
 
 cross.onclick = function () {
   closeModal();
