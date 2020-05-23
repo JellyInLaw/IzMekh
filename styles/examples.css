@@ -88,13 +88,6 @@
 }
 
 @media (max-width: 769px) and (min-width: 320px) {
-  .examples__slider .slick-prev {
-    left: 31%;
-  }
-
-  .examples__slider .slick-next {
-    right: 31%;
-  }
   .examples .slider__item {
     height: 280px;
   }
