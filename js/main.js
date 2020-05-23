@@ -39,3 +39,75 @@ for (let cat of category) {
   };
 }
 //works
+
+$(document).ready(function () {
+  $(".reviews__slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
+  });
+});
+//slider reviews
+
+$(document).ready(function () {
+  $(".examples__slider").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});
+//slider examples
+
+const body = document.querySelector(".body");
+const modal = document.querySelector(".modal");
+const cross = document.querySelector(".close-modal");
+const submit = document.querySelector(".submit-button");
+const orderButtons = document.querySelectorAll(".button");
+
+let openModal = function () {
+  modal.classList.remove("hidden");
+  body.style.overflow = "hidden";
+};
+
+let closeModal = function () {
+  modal.classList.add("hidden");
+  body.style.overflow = "auto";
+};
+
+for (let orderButton of orderButtons) {
+  orderButton.onclick = function () {
+    openModal();
+  };
+}
+
+cross.onclick = function () {
+  closeModal();
+};
+
+submit.onclick = function () {
+  closeModal();
+};
+
+$(document).click(function (e) {
+  if ($(e.target).is(".modal")) {
+    closeModal();
+  }
+});

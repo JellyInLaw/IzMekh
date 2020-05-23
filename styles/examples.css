@@ -1,0 +1,101 @@
+.examples .title {
+  color: #4e888c;
+}
+
+.examples__slider {
+  margin: 0 auto;
+  position: relative;
+}
+
+.examples .slider__img {
+  border-radius: 5px;
+  width: 95%;
+  height: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+.examples .slider__item {
+  height: 500px;
+  width: 500px;
+}
+
+.examples__slider .slick-arrow {
+  cursor: pointer;
+  z-index: 50;
+  font-size: 0;
+  height: 38px;
+  width: 38px;
+  border: none;
+  background: url(../img/arrow-for-examples.png) no-repeat center center;
+}
+
+.examples__slider .slick-prev {
+  position: absolute;
+  bottom: 0;
+  left: 39%;
+  transform: rotate(180deg);
+}
+
+.examples__slider .slick-next {
+  position: absolute;
+  bottom: 0;
+  right: 39%;
+}
+
+.examples__slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto 0 auto;
+  padding-bottom: 10px;
+}
+
+.examples__slider .slick-dots li {
+  list-style: none;
+}
+
+.examples__slider .slick-dots button {
+  font-size: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 3px solid #4e888c;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.examples__slider .slick-dots li:not(:last-of-type) {
+  margin-right: 23px;
+}
+
+.examples__slider .slick-dots button:focus {
+  outline: none;
+}
+
+.examples__slider .slick-dots li.slick-active button {
+  background-color: #4e888c;
+}
+
+@media (max-width: 1024px) {
+  .examples__slider .slick-prev {
+    left: 37%;
+  }
+
+  .examples__slider .slick-next {
+    right: 37%;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 320px) {
+  .examples__slider .slick-prev {
+    left: 31%;
+  }
+
+  .examples__slider .slick-next {
+    right: 31%;
+  }
+  .examples .slider__item {
+    height: 280px;
+  }
+}

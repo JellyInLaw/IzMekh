@@ -1,0 +1,37 @@
+.contacts {
+  background-color: #4e888c;
+  padding-bottom: 60px;
+}
+
+.contacts .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contacts .title,
+.contacts span {
+  color: #fff;
+}
+
+.contacts span {
+  margin-bottom: 40px;
+}
+
+.contacts .title {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.contacts__button {
+  font-size: 24.5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  width: auto;
+  height: 52px;
+  background-color: rgb(50, 93, 96);
+}

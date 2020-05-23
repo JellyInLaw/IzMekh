@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 5000px;
+  background-color: #f0efef;
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
   border: none;
   border-radius: 37px;
   box-shadow: 0px 6px 4px 0 rgba(0, 0, 0, 0.14);
+  color: #fff;
 }
 
 .button:hover {
