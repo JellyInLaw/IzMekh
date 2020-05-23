@@ -75,3 +75,14 @@
 .modal.hidden {
   display: none;
 }
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .modal-body label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .modal-body .title {
+    margin-bottom: 10px;
+  }
+}
