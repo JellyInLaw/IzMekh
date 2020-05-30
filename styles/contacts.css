@@ -11,8 +11,10 @@
 }
 
 .contacts .title,
+.contacts span a,
 .contacts span {
   color: #fff;
+  text-decoration: none;
 }
 
 .contacts span {
