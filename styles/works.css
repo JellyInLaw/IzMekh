@@ -23,19 +23,23 @@
 }
 
 .content {
-  display: flex;
+  display: table;
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 40px;
 }
 
 .content__row {
-  display: flex;
-  justify-content: flex-start;
+  display: table-row;
+}
+
+.content__item {
+  display: table-cell;
 }
 
 .content__item:not(:last-child) {
   margin-right: 70px;
+  padding-bottom: 20px;
 }
 
 .content__item-first-row-last {
